@@ -47,4 +47,8 @@ class User extends Authenticatable implements FilamentUser
     {
         return str_ends_with($this->email, '@admin.com');
     }
+
+    public function comments(){
+        return $this->hasMany(Comment::class);
+    }
 }

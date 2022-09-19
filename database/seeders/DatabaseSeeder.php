@@ -22,5 +22,8 @@ class DatabaseSeeder extends Seeder
         $this->call(PaymentSeeder::class);
         $this->call(CategorySeeder::class);
         $this->call(TagsSeeder::class);
+        $this->call(PostSeeder::class);
+        $this->call(BlogCategorySeeder::class);
+        $this->call(CommentSeeder::class);
     }
 }
